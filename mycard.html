@@ -12,115 +12,214 @@ a {
     color: black;
     font-size:2rem;
     text-decoration: none;
+    font-size:18px
 }
-.course{
-    margin:2rem;
-    margin-top:5%
+.navbar-nav>li>a {
+    color:#474747;   
 }
-.containerBox{
-    width:65%;
-    height:21rem;
-    margin:2rem;
-    background-color:#FBFBFB;
+.use1{
+    margin-top:3%;
+    margin-left:4%
+}
+.use{
+  margin-top:3%;
+}
+.home{
+  margin-left:7%;
+  margin-top:2%
+}
+.control{
+   margin-left:5%;
+   display:flex;
+   flex-direction:row
+}
+.left{
+  width:60%;
+  height:55rem;
+}
+.right{
+  width:30%;
+  height:55rem;
+  margin-left:6%
+}
+.about{
     display:flex;
     flex-direction:row;
-}
-.mask{
-    margin:2.5rem
+    padding:2%
 }
 .horizontal{
-    width:7rem;
-    height:0.3rem;
+    width:10rem;
+    height:0.2rem;
     background-color:#9A9A9A;
-    margin-top:0.5rem
+    margin-top:1em
 }
-.horizontal0{
-    width:2rem;
-    height:0.2rem;
-    background-color:#000;
-    margin-top:0.2rem
+.rating{
+    margin-left:1%
 }
-.horizontal1{
-    width:1rem;
-    height:0.2rem;
-    background-color:#000;
-    margin-top:0.2rem
+.look{
+    margin-top:1%
 }
-.view{
+.background{
+  width:100%;
+  height:20rem;
+  background:#FBFBFB;
+  margin-top:2%
+}
+.card{
+  font-size:16px;
+  font-weight:bold;
+  margin-top:2%
+}
+.price{
+    width:56%;
+    height:25rem;
+    font-size:18px;
+    padding-top: 5%;
+}
+.actual{
     display:flex;
-    flex-direction:row
+    justify-content:space-between;
+    flex-direction:row;
+    margin-top:2%
 }
-.description{
-    padding-left:0.7rem
+.actualTotal{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    color:#FF9500;
+    font-size:25px
 }
-.remove{
-    color:red
+.button{
+    /* margin:9% */
+}
+.coupon{
+  border:1px solid orange;
+  width:100%
+}
+.inputbutton{
+  display:flex;
+  flex-direction:row;
+  border-radius:5px;
+  margin-top:4%
+}
+.apply{
+  border:0px solid orange;
+  background:#FF9500;
+  color:white;
+  height:2.9rem;
+}
+.radio{
+  margin-left:8%;
+  margin-top:7%
+}
+.checkout{
+  margin-left: -10%;
+}
+.check{
+  width:100%
+}
+.discount{
+  font-size:12px
 }
 </style>
 <body>
-
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
-      <img  src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute;">
+      <img  src="./assests/Group 13.svg" alt="Italian Trulli" style="position: absolute">
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon"></span>Home</a></li>
-      <li><a href="#"><span class="glyphicon"></span>Courses</a></li>
-      <li><a href="#"><span class="glyphicon"></span>Trainers</a></li>
-      <li><a href="#"><span class="glyphicon"></span>Events</a></li>
-      <li><a href="#"><span class="glyphicon"></span>Pricing</a></li>
+      <li><a href="#"><span class="glyphicon"></span>Home  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Course  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Trainers  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Events  </a></li>
+      <li><a href="#"><span class="glyphicon"></span>Pricing </a></li>
       <li><a href="#"><span class="glyphicon"></span>Contact</a></li>
       <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Group 6.svg" alt="Group 6"></a></li>
       <li><a href="#"><span class="glyphicon"></span><img  src="./assests/Login Button start.svg" alt="Login Button start"></a></li>
     </ul>
   </div>
 </nav>
-  
-<div class="course">
-  <h3>2 Courses in Cart</h3>
+ <div class="home">Course <img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Math<img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Vedio Math </div>
+<div>
+    <img class="use1" src="./assests/Group last.svg" alt="Group usecard">
+    <img class="use" src="./assests/Group mycard.svg" alt="Group usecard">
 </div>
 
-<div class="containerBox">
-   <div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div>
-   <div class="mask">
-      <div>Course 1-By Shubhangi Sharma</div>
-      <div>Rating<img src="./assests/Group 20.svg" alt="Group 20"></div>
-      <div class="horizontal"></div>
-      <p>About -It is a long established fact that a reader will be distracted by the readable content of a </br>
-         page when looking at its layout.The point of using Lorem ipsum is that it has a more.</p>
-      <div class="view">
-       <div>
-            <div class="horizontal0"></div>
-            <div class="horizontal0"></div>
-            <div class="horizontal0"></div>
-            <div class="horizontal1"></div>
-        </div>
-        <div class="description">Description</div>
-        <div class="remove">Remove</div>
-      </div>
-   </div>
-</div>
+<div class="control">
+    <div class="left">
+            <div class="card">2 Courses in Card</div>
+            <div class="background">
+              <div class="about">
+                <div><div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div></div>
+                <div class="rating">
+                   <div>Course 1-By Shubhangi Sharma </div>
+                   <div class="horizontal"></div>
+                   <div class="look">Rating 3.5<img src="./assests/Group 20.svg" alt="Group 20"></div>
+                   <div class="look">It is a long established fact that a reader will be distracted by the readable content of 
+                       a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.
+                    </div>
+                </div>
+              </div>
+            </div>
 
-<div class="containerBox">
-   <div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div>
-   <div class="mask">
-      <div>Course 1-By Shubhangi Sharma</div>
-      <div>Rating<img src="./assests/Group 20.svg" alt="Group 20"></div>
-      <div class="horizontal"></div>
-      <p>About -It is a long established fact that a reader will be distracted by the readable content of a </br>
-         page when looking at its layout.The point of using Lorem ipsum is that it has a more.</p>
-      <div class="view">
-       <div>
-            <div class="horizontal0"></div>
-            <div class="horizontal0"></div>
-            <div class="horizontal0"></div>
-            <div class="horizontal1"></div>
+            <div class="background">
+               <div class="about">
+                <div><div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div></div>
+                <div class="rating">
+                   <div>Course 1-By Shubhangi Sharma </div>
+                   <div class="look">Rating 3.5<img src="./assests/Group 20.svg" alt="Group 20"></div>
+                   <div class="horizontal"></div>
+                   <div class="look">It is a long established fact that a reader will be distracted by the readable content of 
+                       a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <div class="right">
+      <div class="card">Price Summary</div>
+      <div class="price"> 
+        <div class="actual"> 
+           <div>Actual Price:</div>
+           <div>$625</div>
         </div>
-        <div class="description">Description</div>
-        <div class="description">Remove</div>
-      </div>
-   </div>
+         <div class="actual"> 
+           <div>Sale Discount:</div>
+           <div>$230</div>
+        </div>
+         <div class="actual"> 
+           <div>Coupon Discount:</div>
+           <div>$82</div>
+        </div>
+         <div class="actual"> 
+           <div>Coupon Discount:</div>
+           <div>$68</div>
+        </div>
+        <hr/>
+         <div class="actualTotal"> 
+           <div>Total:</div>
+           <div>$450</div>
+        </div>
+        <div class="button"><img  src="./assests/Group 19.svg" alt="Group 138"></div>
+         <div class="inputbutton">
+            <div><input class="coupon" placeholder="Enter Coupon"/></div>
+            <div ><button class="apply">apply</button></div>
+         </div>
+         <div class="radio">
+            <input type="radio">
+            <label for="female">HEdcsks22</label><br>
+            <label for="female" class="discount">Get Rs 139 Instant Discount</label><br>
+            <input type="radio">
+            <label for="other">FEB2020</label><br>
+            <label for="female" class="discount">Use this coupon and get Rs. 113 Instant discount on your purchase.</label><br>
+            <input type="radio">
+            <label for="other1">HEdcsks22</label>
+            <label for="female" class="discount">Get Rs 139 Instant Discount</label><br>
+          <div>
+          
+    </div>
+    <div class="checkout"><img class="check" src="./assests/Group checkout.svg" alt="Group 138"></div>
 </div>
 
 </body>
