@@ -18,11 +18,7 @@ a {
     color:#474747;   
 }
 .use1{
-    margin-top:3%;
     margin-left:4%
-}
-.use{
-  margin-top:3%;
 }
 .home{
   margin-left:7%;
@@ -40,7 +36,7 @@ a {
 .right{
   width:30%;
   height:55rem;
-  margin-left:6%
+  margin-left:6%;
 }
 .about{
     display:flex;
@@ -71,7 +67,7 @@ a {
   margin-top:2%
 }
 .price{
-    width:56%;
+    width:66%;
     height:25rem;
     font-size:18px;
     padding-top: 5%;
@@ -89,12 +85,12 @@ a {
     color:#FF9500;
     font-size:25px
 }
-.button{
-    /* margin:9% */
-}
+
 .coupon{
   border:1px solid orange;
-  width:100%
+  width:100%;
+  height:3.5rem;
+  border-radius: 10px 0px 0px 10px;
 }
 .inputbutton{
   display:flex;
@@ -106,7 +102,9 @@ a {
   border:0px solid orange;
   background:#FF9500;
   color:white;
-  height:2.9rem;
+  height:3.5rem;
+  width:140%;
+   border-radius: 0px 10px 10px 0px;
 }
 .radio{
   margin-left:8%;
@@ -116,7 +114,8 @@ a {
   margin-left: -10%;
 }
 .check{
-  width:100%
+  width:100%;
+  height:8rem
 }
 .discount{
   font-size:12px
@@ -189,6 +188,31 @@ a {
 .des{
     margin-left:5%
 }
+.set{
+  height:3.9rem
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+  color:#2E2E2E;
+  font-weight:bold
+}
+ul.breadcrumb li+li:before {
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #2E2E2E;
+  text-decoration: none;
+  font-size:13px
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+}
+.breadcrumb{
+  background:white;
+  margin-left:4.5%
+}
 </style>
 <body>
 <nav class="navbar">
@@ -209,10 +233,14 @@ a {
     </ul>
   </div>
 </nav>
- <div class="home">Course <img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Math<img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Vedio Math </div>
+ <ul class="breadcrumb">
+    <li><a href="#">Course </a></li>
+    <li><a href="#">Math</a></li>
+    <li>Vedio Math </li>
+  </ul>
+ <!-- <div class="home">Course <img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Math<img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Vedio Math </div> -->
 <div>
-    <img class="use1" src="./assests/Group last.svg" alt="Group usecard">
-    <img class="use" src="./assests/Group mycard.svg" alt="Group usecard">
+    <img class="use1" src="./assests/Group list.svg" alt="Group usecard">
 </div>
 
 <div class="control">
@@ -243,7 +271,7 @@ a {
       </div>
     </div>
 
-         <div class="logo">
+    <div class="logo">
       <div><img class="mask" src="./assests/Mask Group.svg" alt="Mask Group"></div>
       <div class="sharma">
          <div class="Course">
@@ -267,8 +295,8 @@ a {
          </div>
       </div>
     </div>
+</div>
 
-          </div>
     <div class="right">
       <div class="card">Price Summary</div>
       <div class="price"> 
@@ -293,23 +321,21 @@ a {
            <div>Total:</div>
            <div>$450</div>
         </div>
-        <div class="button"><img  src="./assests/Group 19.svg" alt="Group 138"></div>
          <div class="inputbutton">
             <div><input class="coupon" placeholder="Enter Coupon"/></div>
-            <div ><button class="apply">apply</button></div>
+            <div class="set"><button class="apply">apply</button></div>
          </div>
          <div class="radio">
-            <input type="radio">
+            <input type="radio" name="answer" checked="checked" value="no">
             <label for="female">HEdcsks22</label><br>
             <label for="female" class="discount">Get Rs 139 Instant Discount</label><br>
-            <input type="radio">
+            <input type="radio" name="answer" value="yes">
             <label for="other">FEB2020</label><br>
             <label for="female" class="discount">Use this coupon and get Rs. 113 Instant discount on your purchase.</label><br>
-            <input type="radio">
+            <input type="radio" name="answer" value="other">
             <label for="other1">HEdcsks22</label>
             <label for="female" class="discount">Get Rs 139 Instant Discount</label><br>
           <div>
-          
     </div>
     <div class="checkout"><img class="check" src="./assests/Group checkout.svg" alt="Group 138"></div>
 </div>

@@ -91,8 +91,30 @@ a {
     color:#727272;
     font-size:18px
 }
-@media only screen and (max-width: 900px) {
-  
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+  color:#2E2E2E;
+  font-weight:bold
+}
+ul.breadcrumb li+li:before {
+  color: black;
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #2E2E2E;
+  text-decoration: none;
+  font-size:13px
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+}
+.breadcrumb{
+  background:white;
+}
+.Provid{
+  font-size:17px;
+  font-weight:bold
 }
 </style>
 <body>
@@ -121,13 +143,18 @@ a {
     <img class="use1" src="./assests/Group check.svg" alt="Group check"> 
 </div>
 <div class="arrow">
-  <div>Home<img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Course Details<img src="./assests/arrow_forward_ios_24px.svg" alt="arrow_forward_ios_24px">Course for 10th & 12th </div>
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Course Details</a></li>
+    <li>Course for 10th & 12th</li>
+  </ul>
 </div>
+
 
 <div class="course">
 
     <div class="leftPannel">
-      <div>Provided courses</div>
+      <div class="Provid">Provided courses</div>
       <div class="reset">
         <div>Filter</div>
         <div>Reset all</div>

@@ -6,8 +6,64 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+  <script>
+    function checkYesNo() {
+        if (document.getElementById('toggle').checked) {
+            document.getElementById('student').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student').style.color = '#C4C4C4';
+        }
+    }
+     function checkYesNo1() {
+        if (document.getElementById('toggle1').checked) {
+            document.getElementById('student1').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student1').style.color = '#C4C4C4';
+        }
+    }
+     function checkYesNo2() {
+        if (document.getElementById('toggle2').checked) {
+            document.getElementById('student2').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student2').style.color = '#C4C4C4';
+        }
+    }
+       function checkYesNo3() {
+        if (document.getElementById('toggle3').checked) {
+            document.getElementById('student3').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student3').style.color = '#C4C4C4';
+        }
+    }
+       function checkYesNo4() {
+        if (document.getElementById('toggle4').checked) {
+            document.getElementById('student4').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student4').style.color = '#C4C4C4';
+        }
+    }
+      function checkYesNo5() {
+        if (document.getElementById('toggle5').checked) {
+            document.getElementById('student5').style.color = '#5A5E63';
+        }else {
+           document.getElementById('student5').style.color = '#C4C4C4';
+        }
+    }
+       function checkYesNo6() {
+        if (document.getElementById('toggle6').checked) {
+            document.getElementById('student6').style.color = '#5A5E63';
+            
+        }else {
+           document.getElementById('student6').style.color = '#C4C4C4';
+        }
+    }
+    </script>
 <style>
+
+
+
+
+
 a {
     color: black;
     font-size:2rem;
@@ -204,78 +260,79 @@ input:checked + .slider:before {
         <div>Status</div>
     </div>
     <hr/>
-    <div class="toggle">
+    <div class="toggle" id="student6">
+        <div><img id="use" src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
+        <div>Prakesh@gmail.com</div>
+        <div>944521625254</div>
+        <div>
+            <label class="switch">
+            <input type="checkbox" checked id="toggle6" onclick="checkYesNo6()">
+            <span class="slider round" ></span>
+            </label>
+        </div>
+    </div>
+    <hr/>
+    <div class="toggle" id="student5">
         <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
         <div>Prakesh@gmail.com</div>
         <div>944521625254</div>
         <div><label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" checked id="toggle5" onclick="checkYesNo5()">
             <span class="slider round"></span>
             </label>
         </div>
     </div>
     <hr/>
-    <div class="toggle">
+    <div class="toggle" id="student4">
         <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
         <div>Prakesh@gmail.com</div>
         <div>944521625254</div>
         <div><label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" checked id="toggle4" onclick="checkYesNo4()">
             <span class="slider round"></span>
             </label>
         </div>
     </div>
     <hr/>
-    <div class="toggle">
+    <div class="toggle" id="student3">
         <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
         <div>Prakesh@gmail.com</div>
         <div>944521625254</div>
         <div><label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" checked id="toggle3" onclick="checkYesNo3()">
             <span class="slider round"></span>
             </label>
         </div>
     </div>
     <hr/>
-    <div class="toggle">
+    <div class="toggle" id="student2">
         <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
         <div>Prakesh@gmail.com</div>
         <div>944521625254</div>
         <div><label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" checked  id="toggle2" onclick="checkYesNo2()">
             <span class="slider round"></span>
             </label>
         </div>
     </div>
     <hr/>
-    <div class="toggle">
+    <div class="toggle" id="student1">
         <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
         <div>Prakesh@gmail.com</div>
         <div>944521625254</div>
         <div><label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" checked id="toggle1" onclick="checkYesNo1()">
             <span class="slider round"></span>
             </label>
         </div>
     </div>
     <hr/>
-    <div class="toggle">
+    <div class="toggle"  id="student">
         <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
-        <div>Prakesh@gmail.com</div>
+        <div >Prakesh@gmail.com</div>
         <div>944521625254</div>
         <div><label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider round"></span>
-            </label>
-        </div>
-    </div>
-    <hr/>
-    <div class="toggle">
-        <div><img src="./assests/Oval.svg" alt="Group user">Prakesh Lop</div>
-        <div>Prakesh@gmail.com</div>
-        <div>944521625254</div>
-        <div><label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" checked  id="toggle" onclick="checkYesNo()">
             <span class="slider round"></span>
             </label>
         </div>
